@@ -17,11 +17,28 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: "10.x"
-      - name: Install and Build 🔧
-        run: |
-          npm install
-          npm run deploy
-      - name: Deploy
+
+      - name: Cache node modules 😉
+        id: AKCacheNodeModules
+        uses: actions/cache@v2
+        env:
+          cache-name: cache-node-modules
+        with:
+          # npm cache files are stored in "~/.npm" on Linux/MacOS
+          key:  ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-build-${{ env.cache-name }}
+            ${{ runner.os }}-build-
+            ${{ runner.os }}-
+
+      - name: Install Dependencies ⛏️
+        if: steps.AKCacheNodeModules.outputs.cache-hit != 'true'
+        run: npm install
+
+      - name: Build 🔧
+        run: npm run deploy
+
+      - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
           BRANCH: gh-pages
