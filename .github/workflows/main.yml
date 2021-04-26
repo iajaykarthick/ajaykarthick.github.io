@@ -25,6 +25,6 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
           BRANCH: gh-pages
-          FOLDER: dist
+          FOLDER: dist/personal-portfolio
           clean: true
           clean_exlude: CNAME
