@@ -20,10 +20,12 @@ jobs:
       - name: Install and Build 🔧
         run: |
           npm install
-          npm run build
+          npm run deploy
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: gh-pages
           FOLDER: dist/personal_portfolio
+          clean: true
+          clean_exlude: CNAME
