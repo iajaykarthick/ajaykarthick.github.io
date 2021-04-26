@@ -20,5 +20,5 @@ deploy:
   github-token: $GITHUB_TOKEN
   local_dir: dist/personal_portfolio
   on:
-    branch: gh-pages
+    branch: main
   fdqn: ajaykarthick.me
