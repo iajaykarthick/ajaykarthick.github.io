@@ -50,8 +50,8 @@
   border-color: rgba(255, 255, 255, 0.3);
 }
 
-.navbar .navbar-toggler:hover,
-.navbar-toggler:focus {
+.navbar-toggler:focus,
+.navbar .navbar-toggler:hover {
   background: none;
 }
 
@@ -76,8 +76,8 @@
   border-radius: 2px;
 }
 
-.navbar .dropdown-menu .dropdown-item:focus,
-.navbar .dropdown-menu .dropdown-item {
+.navbar .dropdown-menu .dropdown-item,
+.navbar .dropdown-menu .dropdown-item:focus {
   line-height: 2;
   color: #37434d;
 }
@@ -100,7 +100,6 @@
   border-radius: 0;
   color: #ccc;
   box-shadow: none;
-  color: inherit;
   transition: border-bottom-color 0.3s;
 }
 
