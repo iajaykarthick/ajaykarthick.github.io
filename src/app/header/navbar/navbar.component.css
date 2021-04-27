@@ -1,14 +1,14 @@
 .navbar {
   background: transparent;
-  padding-top: .75rem;
-  padding-bottom: .75rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
   color: #fff;
   border-radius: 0;
   box-shadow: none;
   border: none;
 }
 
-@media (min-width:768px) {
+@media (min-width: 768px) {
   .navbar {
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -25,11 +25,11 @@
 }
 
 .navbar .navbar-collapse {
-  border-top: 1px solid rgba(255,255,255,0.3);
-  margin-top: .5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  margin-top: 0.5rem;
 }
 
-@media (min-width:768px) {
+@media (min-width: 768px) {
   .navbar .navbar-collapse {
     border-color: transparent;
     margin: 0;
@@ -38,7 +38,7 @@
 
 .navbar .navbar-collapse span .login {
   color: #d9d9d9;
-  margin-right: .5rem;
+  margin-right: 0.5rem;
   text-decoration: none;
 }
 
@@ -47,17 +47,18 @@
 }
 
 .navbar .navbar-toggler {
-  border-color: rgba(255,255,255,0.3);
+  border-color: rgba(255, 255, 255, 0.3);
 }
 
-.navbar .navbar-toggler:hover, .navbar-toggler:focus {
+.navbar .navbar-toggler:hover,
+.navbar-toggler:focus {
   background: none;
 }
 
 @media (min-width: 768px) {
   .navbar-nav .nav-link {
-    padding-left: .7rem;
-    padding-right: .7rem;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
   }
 }
 
@@ -70,17 +71,19 @@
 
 .navbar .navbar-nav > li > .dropdown-menu {
   margin-top: -5px;
-  box-shadow: 0 4px 8px rgba(0,0,0,.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background-color: #fff;
   border-radius: 2px;
 }
 
-.navbar .dropdown-menu .dropdown-item:focus, .navbar .dropdown-menu .dropdown-item {
+.navbar .dropdown-menu .dropdown-item:focus,
+.navbar .dropdown-menu .dropdown-item {
   line-height: 2;
   color: #37434d;
 }
 
-.navbar .dropdown-menu .dropdown-item:focus, .navbar .dropdown-menu .dropdown-item:hover {
+.navbar .dropdown-menu .dropdown-item:focus,
+.navbar .dropdown-menu .dropdown-item:hover {
   background: #ebeff1;
 }
 
@@ -104,4 +107,3 @@
 .navbar .form-inline .search-field:focus {
   border-bottom: 1px solid #ccc;
 }
-
