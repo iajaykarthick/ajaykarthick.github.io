@@ -1,23 +1,14 @@
-<div class="container hero">
+<div class="hero container-fluid">
   <div class="row">
-      <div class="col-12 col-lg-5 col-xl-5 offset-lg-1 offset-xl-1 d-lg-block">
-          <h1>Ajay Karthick</h1>
-          <p>Personal Portfolio page of Ajay Karthick.</p>
-          <button class="btn btn-light btn-lg action-button" type="button">Skills</button>
-            <p class="line type-writer-effect">Coming Soon...!</p>
+      <div class="col-md-6 intro-col">
+          <h1 class="my-name">Ajay Karthick</h1>
+          <p class="full-stack-text">Full Stack Developer with experience in</p>
+          <p class="exp-writer"></p>
+          <!-- <button class="btn btn-light btn-lg action-button" type="button">Skills</button> -->
       </div>
 
-      <div class="col-md-5 col-lg-5 offset-lg-1 offset-xl-1 d-lg-block">
-        <div class="terminal">
-          <div class=menu>
-            <div class="buttons close-terminal-btn"></div>
-            <div class="buttons minimize-terminal-btn"></div>
-            <div class="buttons zoom-terminal-btn"></div>
-          </div>
-          <div class="screen">
-            <output>> coming soon!!!<span class="cursor">_</span></output>
-          </div>
-        </div>
+      <div class="col-md-6 terminal-col">
+        <app-terminal></app-terminal>
       </div>
   </div>
 </div>
