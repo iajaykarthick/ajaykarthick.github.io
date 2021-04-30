@@ -14,7 +14,7 @@ export class Section1MainComponent implements OnInit {
       loop: true,
       typeSpeed: 100,
       deleteSpeed: 100,
-      typeColor: 'white',
+      typeColor: '#682ae9',
       cursorColor: 'green'
     });
 

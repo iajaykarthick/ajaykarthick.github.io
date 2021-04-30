@@ -1,0 +1,49 @@
+<ul id="tab-list" class="nav nav-tabs"  role="tablist">
+
+  <li class="nav-item" role="presentation" *ngFor="let tab of objectKeys(tabs)">
+    <div class="my-container">
+      <button *ngIf="tab !== 'about'" class="close" type="button" title="Remove this tab" (click)="closeTab(tab)">
+        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+          <path fill="none" d="M0 0h48v48h-48z"/>
+          <path d="M29.17 16l-5.17 5.17-5.17-5.17-2.83 2.83 5.17 5.17-5.17 5.17 2.83 2.83 5.17-5.17 5.17 5.17 2.83-2.83-5.17-5.17 5.17-5.17-2.83-2.83zm-5.17-12c-11.05 0-20 8.95-20 20s8.95 20 20 20 20-8.95 20-20-8.95-20-20-20zm0 36c-8.82 0-16-7.18-16-16s7.18-16 16-16 16 7.18 16 16-7.18 16-16 16z"/>
+          </svg>
+      </button>
+      <a class="nav-link"
+        [ngClass]="{'active': tabs[tab]}"
+        [id]="getId(tab)"
+        data-toggle="tab"
+        [href]="getHref(tab)"
+        role="tab"
+        [aria-controls]="tab"
+        aria-selected="true"
+        (click)='goTo(tab)'>
+        <span> {{tab.charAt(0).toUpperCase() + tab.slice(1)}} </span>
+        </a>
+    </div>
+  </li>
+
+
+</ul>
+
+<!-- Tab panes -->
+<div id="tab-content" class="tab-content">
+
+  <div
+    class="my-tab-window tab-pane fade"
+    [ngClass]="{'show active': tabs[tab]}"
+    [id]="tab" role="tabpanel"
+    [aria-labelledby]="getId(tab)"
+    *ngFor="let tab of objectKeys(tabs)"
+  >
+    <section class="container-fluid">
+      <div class="my-card">
+        <app-about *ngIf="tab === 'about'"></app-about>
+        <app-work *ngIf="tab === 'work'"></app-work>
+        <app-skills *ngIf="tab === 'skills'"></app-skills>
+        <app-projects *ngIf="tab === 'projects'"></app-projects>
+      </div>
+    </section>
+  </div>
+
+</div>
+

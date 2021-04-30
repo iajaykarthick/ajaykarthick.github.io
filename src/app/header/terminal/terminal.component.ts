@@ -39,7 +39,8 @@ export class TerminalComponent implements OnInit {
     this.outputWriter = new Typewriter(target2, {
       typeSpeed: 0,
       loop: false,
-      typeColor: '#a6f0c6',
+      // typeColor: '#a6f0c6',
+      typeColor: '#30e3ca',
       cursorColor: 'black'
     });
 

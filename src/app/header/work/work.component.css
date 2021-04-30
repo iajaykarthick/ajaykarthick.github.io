@@ -1,0 +1,66 @@
+li {
+  margin-bottom: 1rem;
+}
+ul {
+  list-style: none;
+  font-family: 'Mukta', sans-serif;
+}
+.role::before {
+  display: inline-block;
+  content: ' ';
+  background-image: url('/assets/icons/computer.svg');
+  background-size: 1.2rem 1.2rem;
+  margin-right: 0.5rem;
+  height: 1.2rem;
+  width: 1.2rem;
+  position: relative;
+  /* Adjust these values accordingly */
+  top: 2px;
+  left: 5px;
+}
+
+
+
+.tech1::before {
+  display: inline-block;
+  content: ' ';
+  background-image: url('/assets/icons/stack.svg');
+  background-size: 1.2rem 1.2rem;
+  margin-right: 0.5rem;
+  height: 1.2rem;
+  width: 1.2rem;
+  position: relative;
+  /* Adjust these values accordingly */
+  top: 3px;
+  left: 5px;
+}
+
+.tech2::before {
+  display: inline-block;
+  content: ' ';
+  background-image: url('/assets/icons/java.svg');
+  background-size: 1.2rem 1.2rem;
+  margin-right: 0.5rem;
+  height: 1.2rem;
+  width: 1.2rem;
+  position: relative;
+  /* Adjust these values accordingly */
+  top: 3px;
+  left: 5px;
+}
+
+
+.duration::before {
+  display: inline-block;
+  content: ' ';
+  background-image: url('/assets/icons/date.svg');
+  background-size: 1.5rem 1.5rem;
+  margin: 0 0.5rem;
+  height: 1.5rem;
+  width: 1.5rem;
+  position: relative;
+  /* Adjust these values accordingly */
+  top: 5px;
+  left: 5px;
+}
+

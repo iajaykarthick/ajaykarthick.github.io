@@ -1,11 +1,12 @@
 .navbar {
-  background: transparent;
+  background: #111!important;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   color: #fff;
   border-radius: 0;
   box-shadow: none;
   border: none;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 @media (min-width: 768px) {

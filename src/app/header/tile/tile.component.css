@@ -1,0 +1,162 @@
+.close {
+  color: #fb3640;
+  font-weight: lighter;
+  position: relative;
+  top: 5px;
+  left: -1px;
+}
+
+.close svg {
+  width: 25px;
+  height: 25px;
+}
+
+.close svg:hover {
+  transform: translate3d(0,-1px,0);
+}
+
+#tab-list {
+  background-color: #111;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  color: #000;
+  background: white;
+  border: none;
+  border-bottom: 2px solid #ffc93c;
+}
+
+/* each tab border */
+.nav-tabs .nav-link {
+  width: 120px;
+  font-family: 'Krona One', sans-serif;
+  font-size: 13px;
+  color: #eee;
+  /* background: #616161; */
+  background: #424642;
+
+  margin-bottom: 2px;
+  border: none;
+  border-bottom: 1px solid #eee;
+  border-radius: 100px 20px 50px 20px;
+  margin-left: 0.1rem;
+  user-select: none;
+}
+
+.nav-tabs .nav-link:hover {
+  border-bottom: 2px solid #ffc93c;
+}
+
+
+/* Menu body divider */
+
+.nav-tabs {
+  /* border-bottom: 1px solid red; */
+  border-bottom: 0;
+}
+
+.my-tab-window {
+  padding: 1rem;
+}
+
+
+.container-fluid {
+  background-attachment: fixed;
+}
+
+.my-card:before {
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+    filter: blur(10px);
+}
+.my-card {
+  padding: 1rem;
+  box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.1);
+  border-radius: 10px 0px 10px 15px;
+  /* background: rgba(0, 0, 0, 0.5); */
+  backdrop-filter: blur(100px);
+  backdrop-filter: saturate(180%) blur(10px);
+}
+
+@media (min-width: 544px) {
+  .my-card:hover {
+    transform: translate3d(0,-5px,0);
+    box-shadow: 0 25px 0 rgb(0 0 0 / 12%);
+  }
+}
+
+@media (max-width: 800px) {
+  .nav-tabs .nav-link {
+    width: 100px;
+    font-size: 10px;
+  }
+
+  .close {
+    top: 3px;
+    left: -2px;
+  }
+
+  .close svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 450px) {
+  .nav-tabs .nav-link {
+    width: 85px;
+    font-size: 8px;
+  }
+
+  .close {
+    top: 2px;
+    left: -2px;
+  }
+
+  .close svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media (max-width: 400px) {
+  .nav-tabs .nav-link {
+    width: 75px;
+    font-size: 7px;
+  }
+
+  .close {
+    top: 1px;
+    left: -2px;
+  }
+
+  .close svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media (max-width: 343px) {
+  .nav-tabs .nav-link {
+    width: 70px;
+    font-size: 6px;
+  }
+
+  .close {
+    top: 1px;
+    left: -2px;
+  }
+
+  .close svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+
+
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+  .my-card {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+  }
+}

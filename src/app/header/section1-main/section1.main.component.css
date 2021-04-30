@@ -1,11 +1,5 @@
 .hero {
-  perspective: 1000px;
-  width: 100%;
-  height: 100%;
   padding: 1rem;
-  position: fixed;
-  left: 50%;
-  transform: translateX(-50%);
   text-align: justify;
 }
 
@@ -17,28 +11,35 @@
 }
 
 .hero h1 {
-  color: #eeeeee;
+  color: #fff;
+  letter-spacing: -1.5px;
+  background: linear-gradient(171deg,#30e3ca 30%,#a162e8 50%,#682ae9 70%,#edca85 94%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-size: 3.9975843648em;
   margin-top: 0;
   margin-bottom: 15px;
   font-weight: bold;
   line-height: 1.4;
-  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Hel etica Neue', sans-serif; */
   font-family: 'league-spartan';
 }
 
 
 .full-stack-text {
-  color: #aad8d3;
+  /* color: #aad8d3; */
+  color: #dbdbdb;
   font-size: 25px;
   margin-bottom: 10px;
   font-weight: 300;
-  font-family: LibreBaskerville-Regular,Palatino Linotype,Times New Roman,serif;
+  font-family: 'Inconsolata', monospace;
 }
 
 .exp-writer {
   font-size: 3em;
-  font-family: 'Inconsolata', monospace;
+  font-family: LibreBaskerville-Regular,Palatino Linotype,Times New Roman,serif;
+
 }
 
 @media (min-width: 992px) {
@@ -46,13 +47,6 @@
     line-height: 1.2;
   }
 }
-
-@media (min-width: 768px) {
-  .hero {
-    text-align: left;
-  }
-}
-
 
 @media screen and (max-width: 400px) {
   .hero h1 {
@@ -62,4 +56,25 @@
   .exp-writer {
     font-size: 30px;
   }
+}
+
+.tile-col {
+  width: 100%;
+  height: 100%;
+}
+
+.tile {
+  background: #191919;
+}
+
+
+@media (min-width: 544px) {
+  .tile:hover {
+    transform: translate3d(0,-5px,0);
+    box-shadow: 0 52px 74px rgb(0 0 0 / 12%);
+  }
+}
+
+.row1 {
+  margin-bottom: 4rem;
 }

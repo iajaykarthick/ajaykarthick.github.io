@@ -1,0 +1,91 @@
+.column-list {
+  columns: 300px;
+}
+
+li {
+  font-family: 'Mukta', sans-serif;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.icons::before {
+  display: inline-block;
+  content: '';
+  background-size: 2rem 2rem;
+  margin-right: 0.8rem;
+  height: 2rem;
+  width: 2rem;
+  position: relative;
+  /* Adjust these values accordingly */
+  top: 3px;
+  left: 5px;
+}
+
+.angular::before {
+  background-image: url('/assets/icons/angular.svg');
+}
+.react::before {
+  background-image: url('/assets/icons/react.svg');
+}
+
+.vue::before {
+  background-image: url('/assets/icons/vue.svg');
+}
+
+.flask::before {
+  background-image: url('/assets/icons/flask.svg');
+}
+
+.django::before {
+  background-image: url('/assets/icons/django.svg');
+  margin: 0;
+  padding: 0;
+  background-size: 4rem 4rem;
+  height: 4rem;
+  width: 4rem;
+}
+
+.spring::before {
+  background-image: url('/assets/icons/spring.svg');
+}
+
+.express::before {
+  background-image: url('/assets/icons/code.svg');
+}
+
+.website::before {
+  background-image: url('/assets/icons/web.svg');
+}
+
+.coding::before {
+  background-image: url('/assets/icons/code.svg');
+}
+
+.python::before {
+  background-image: url('/assets/icons/python.svg');
+}
+
+.java::before {
+  background-image: url('/assets/icons/java.svg');
+}
+
+.nodejs::before {
+  background-image: url('/assets/icons/nodejs.svg');
+}
+
+.mysql::before {
+  background-image: url('/assets/icons/mysql.svg');
+}
+
+.oracle::before {
+  background-image: url('/assets/icons/oracle.svg');
+}
+
+.postgresql::before {
+  background-image: url('/assets/icons/postgresql.svg');
+}
+
+.mongodb::before {
+  background-image: url('/assets/icons/mongodb.svg');
+}
